@@ -6,7 +6,6 @@
 ## Writing
 
  The beauty (well in my eyes) is in how the objects are written/serialized to Json.
- 
  The example below shows that the code represents what the file contents will look like.
 
 ```
@@ -41,9 +40,8 @@ Here we are mapping a property named `"Version"` to a class member called `m_Ver
 When the loading code finds a Json property named `"Version"` it will place the value read into `m_Version`.
 All basic types are supported: `String, int, float & bool`.
 
-### Array's of objects*
+### Array of objects
  In the above example we saved an `array of persons` (people) and the array contains the `person` type.
- 
  We need a helper object in our Json document class (derived from `JsonFile` that is an instance of the object type (`person`) for the loader to set each value of the object during the load process.
 ```
     m_PropertyMap["Persons[].First"] = &m_Person.First;
@@ -75,6 +73,6 @@ https://github.com/tonyt73/AGD-Studio
 
 So for more usage examples see that project.
 
-
 # Using the code
 Simply add the files from the JSON folder into your project or build it as a static library and use that in your project.
+Use the `JSONdocument` class as a starting point or the AGD Studio project documents.
