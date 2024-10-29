@@ -1,7 +1,7 @@
 # Json Library
  A C++ Builder JSON object/file helper.
  
- This project allows you to easily manage Json files and there associated internal C++ objects.
+ This project allows you to easily manage Json files and their associated internal C++ objects.
 
 ## Writing
 
