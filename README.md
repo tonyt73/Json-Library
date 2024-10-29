@@ -60,9 +60,10 @@ void __fastcall JSONdocument::OnEndObject(const String& object)
 ```
 
 ## Multi-inheritence
-You can inherit from a base Json document type multiple times. see https://github.com/tonyt73/AGD-Studio/tree/master/Source/Project for detailed examples.
-
+You can inherit from a base Json document type multiple times. 
+See https://github.com/tonyt73/AGD-Studio/tree/master/Source/Project for detailed examples.
 
 ## More reading
-These classes were developed in the AGD Studio project. https://github.com/tonyt73/AGD-Studio
+The `JsonFile`, `File` & `Folders` classes were developed in the AGD Studio project. 
+https://github.com/tonyt73/AGD-Studio
 So for more usage examples see that project.
