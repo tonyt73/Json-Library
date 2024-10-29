@@ -35,13 +35,11 @@
 ## Loading
  Loading is mostly handled by the base `JsonFile` class by mapping objects/types to loader variables.
 ```
-m_PropertyMap["String"] = &m_String;
+m_PropertyMap["Version"] = &m_Version;
 ```
- Here we are mapping a property poorly named `"String"` to a class member called `m_String`.
- 
- When the loading code finds a Json property called `"String"` it will place the read value into `m_String`.
- 
- All basic types are supported: `String, int, float & bool`.
+Here we are mapping a property named `"Version"` to a class member called `m_Version`.
+When the loading code finds a Json property named `"Version"` it will place the value read into `m_Version`.
+All basic types are supported: `String, int, float & bool`.
 
 ### Array's of objects*
  In the above example we saved an `array of persons` (people) and the array contains the `person` type.
