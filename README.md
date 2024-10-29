@@ -67,3 +67,7 @@ See https://github.com/tonyt73/AGD-Studio/tree/master/Source/Project for detaile
 The `JsonFile`, `File` & `Folders` classes were developed in the AGD Studio project. 
 https://github.com/tonyt73/AGD-Studio
 So for more usage examples see that project.
+
+
+# Using the code
+Simply add the files from the JSON folder into your project or build it as a static library and use that in your project.
