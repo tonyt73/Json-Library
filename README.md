@@ -60,6 +60,9 @@ void __fastcall JSONdocument::OnEndObject(const String& object)
     }
 }
 ```
+Why not allow a `m_PropertyMap["Persons[]"] = &m_Persons` mapping?
+The list container could be of any list type, such as `std::list, std::vector` or a custom list type.
+So this way it allows the user to choose how to handle their list of objects.
 
 ### Multi-level Json objects.
 Using the `Push` and `Pop` methods of the `JsonFile` class you can have multiple levels of objects/properties.
