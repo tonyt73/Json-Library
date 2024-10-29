@@ -7,7 +7,7 @@ The beauty (well in my eyes) is in how the objects are written/serialized to Jso
 The example below shows that the code represents what the file contents will look like.
 
 ```
-	Open(m_File);
+    Open(m_File);
     Push("SingleValues");
         Write("String", m_String);
         Write("Int", m_Int);
