@@ -2,7 +2,7 @@
  A C++ Builder JSON object/file helper
  This project allows you to easily manage Json files and there associated internal C++ objects.
 
-**Writing**
+## Writing
 
 The beauty (well in my eyes) is in how the objects are written/serialized to Json.
 The example below shows that the code represents what the file contents will look like.
@@ -30,7 +30,8 @@ The example below shows that the code represents what the file contents will loo
     JsonFile::Close();
 ```
 
-**Loading**
+## Loading
+
 Loading is mostly handled by the base JsonFile class by mapping objects/types to loader variables.
 ```
 m_PropertyMap["String"] = &m_String;
@@ -39,7 +40,8 @@ Here we are mapping a property poorly named `"String"` to a class member called 
 When the loading code finds a Json property called `"String"` it will place the read value into `m_String`.
 All basic types are supported: `String, int, float & bool`.
 
-*Array's of objects*
+### Array's of objects*
+
 In the above example we saved an `array of persons` (people) and the array contains the `person` type.
 We need a helper object in our Json document class (derived from `JsonFile` that is an instance of the object type (`person`) for the loader to set each value of the object during the load process.
 ```
@@ -59,10 +61,12 @@ void __fastcall JSONdocument::OnEndObject(const String& object)
 }
 ```
 
-**Multi-inheritence**
+## Multi-inheritence
+
 You can inherit from a base Json document type multiple times. see https://github.com/tonyt73/AGD-Studio/tree/master/Source/Project for detailed examples.
 
 
-**More reading**
+## More reading
+
 These classes were developed in the AGD Studio project. https://github.com/tonyt73/AGD-Studio
 So for more usage examples see that project.
