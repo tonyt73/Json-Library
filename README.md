@@ -61,6 +61,11 @@ void __fastcall JSONdocument::OnEndObject(const String& object)
 }
 ```
 
+### Multi-level Json objects.
+Using the `Push` and `Pop` methods of the `JsonFile` class you can have multiple levels of objects/properties.
+
+See https://github.com/tonyt73/AGD-Studio/blob/master/Source/Project/MachineConfig.cpp for a good example.
+
 ## Multi-inheritence
 You can inherit from a base Json document type multiple times. 
 
